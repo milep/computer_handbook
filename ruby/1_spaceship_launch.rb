@@ -10,8 +10,8 @@ puts "Give thrust power:"
 try_count = 0
 
 while try_count < 10 #loop while try_count is less than 10
-  answer = gets.chomp
-  thrust = answer.to_i
+  answer = gets.chomp #gets input from user and remove new line character from the end of the input
+  thrust = answer.to_i #transform answer string to integer, so we can compare it to other integers
 
   if thrust == resistance
     puts "Launch was successfull!"
